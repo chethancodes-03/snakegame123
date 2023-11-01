@@ -68,18 +68,21 @@ function handleSwipe() {
   const dx = touchEndX - touchStartX;
   const dy = touchEndY - touchStartY;
   
-  if (abs(dx) > abs(dy)) {
+if (abs(dx) > abs(dy)) {
     // Horizontal swipe
-    if (dx > 0) {
+    if (dx > 0 && s.xspeed !== -1) {
       s.dir(1, 0); // Right swipe
-    } else {
+    } 
+    else if(dx < 0 && s.xspeed !== 1) {
       s.dir(-1, 0); // Left swipe
     }
-  } else {
+  } 
+  else {
     // Vertical swipe
-    if (dy > 0) {
+    if (dy > 0 && s.yspeed !== -1) {
       s.dir(0, 1); // Down swipe
-    } else {
+    } 
+    else if(dy < 0 && s.yspeed !== 1) {
       s.dir(0, -1); // Up swipe
     }
   }
