@@ -18,7 +18,7 @@ Welcome to the Snake Game! This classic Snake game is implemented in JavaScript 
 
 ## Getting Started
 
-use this [link]() to play.
+use this [link](https://chethancodes-03.github.io/snakegame123/) to play.
 
 ## Customization
 
