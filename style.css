@@ -1,4 +1,4 @@
-/* Adjust the background and container */
+/* Center the text at the top */
 html, body {
   margin: 0;
   padding: 0;
@@ -6,8 +6,14 @@ html, body {
   background-color: rgb(104, 203, 104);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Place content at the top */
   align-items: center;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 10px; /* Add padding for better spacing */
 }
 
 /* Make the canvas responsive and centered */
@@ -16,4 +22,6 @@ canvas {
   max-height: 100vh;
   border: 2px solid white;
   background-color: rgb(103, 202, 103);
+  display: block;
+  margin: 0 auto;
 }
